@@ -11,11 +11,7 @@ events.on("push", function(e, project) {
 
   // Now we want it to run these commands in order:
   node.tasks = [
-    "cd /src/app",
-    "pip install Flask",
-    "cd /src/",
-    "echo hello-world"
-//    "python setup.py test"
+    "echo Welcome to Brigade, Next Big Thing!"
   ]
 
   // We're done configuring, so we run the job
