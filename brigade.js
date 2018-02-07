@@ -15,7 +15,7 @@ events.on("push", function(e, project) {
  #   "pip install -r requirements.txt",
  #   "cd /src/",
  #   "python setup.py test"
-     "echo hello-world"
+     "ping 127.0.0.1"
   ]
 
   // We're done configuring, so we run the job
