@@ -7,7 +7,7 @@ events.on("push", function(e, project) {
   var node = new Job("test-runner")
 
   // We want our job to run the stock Docker Python 3 image
-  node.image = "python:3"
+  node.image = "ubuntu:16.04"
 
   // Now we want it to run these commands in order:
   node.tasks = [
@@ -15,6 +15,8 @@ events.on("push", function(e, project) {
  #   "pip install -r requirements.txt",
  #   "cd /src/",
  #   "python setup.py test"
+     "apt-get update"
+     "apt-get install inetutils-ping -y"
      "ping 127.0.0.1"
   ]
 
