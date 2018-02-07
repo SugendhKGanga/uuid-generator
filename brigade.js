@@ -7,14 +7,15 @@ events.on("push", function(e, project) {
   var node = new Job("test-runner")
 
   // We want our job to run the stock Docker Python 3 image
-  node.image = "410602862282.dkr.ecr.us-east-2.amazonaws.com/demo-jenkins-pipeline:1.4"
+  node.image = "410602862282.dkr.ecr.us-east-2.amazonaws.com/demo-jenkins-pipeline:1.5"
 
   // Now we want it to run these commands in order:
   node.tasks = [
 //    "echo Welcome to Brigade, Next Big Thing!"
 //    "helm install --namespace wordpress --name wordpress --set serviceType=NodePort stable/wordpress"
 //    `kubectl get pods`
-    `helm install --namespace wordpress --name wordpress --set serviceType=LoadBalancer stable/wordpress`
+     `helm install --namespace wordpress --name wordpress --set serviceType=LoadBalancer /opt/charts/stable/wordpress`
+//    `helm install --namespace wordpress --name wordpress --set serviceType=LoadBalancer stable/wordpress`
   ]
 
   // We're done configuring, so we run the job
