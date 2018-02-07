@@ -13,7 +13,7 @@ events.on("push", function(e, project) {
   node.tasks = [
 //    "echo Welcome to Brigade, Next Big Thing!"
 //    "helm install --namespace wordpress --name wordpress --set serviceType=NodePort stable/wordpress"
-    `kubectl get pods`
+//    `kubectl get pods`
     `helm install --namespace wordpress --name wordpress --set serviceType=LoadBalancer stable/wordpress`
   ]
 
