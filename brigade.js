@@ -14,6 +14,7 @@ events.on("push", function(e, project) {
     "cd /src/app",
     "pip install Flask",
     "cd /src/",
+    "echo hello-world"
 //    "python setup.py test"
   ]
 
