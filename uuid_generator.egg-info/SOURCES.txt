@@ -1,5 +1,9 @@
 setup.py
 app/__init__.py
+app/setup.py
+app/tests/__init__.py
+app/tests/app_tests.py
+app/tests/setup.py
 tests/__init__.py
 tests/app_tests.py
 tests/setup.py
