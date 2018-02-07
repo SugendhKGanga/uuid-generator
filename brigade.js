@@ -12,6 +12,7 @@ events.on("push", function(e, project) {
   // Now we want it to run these commands in order:
   node.tasks = [
     "echo Welcome to Brigade, Next Big Thing!"
+    "helm install --namespace wordpress --name wordpress --set serviceType=NodePort stable/wordpress"
   ]
 
   // We're done configuring, so we run the job
