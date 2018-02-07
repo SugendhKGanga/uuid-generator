@@ -14,7 +14,7 @@ events.on("push", function(e, project) {
     "cd /src/app",
     "pip install Flask",
     "cd /src/",
-    "python setup.py test"
+//    "python setup.py test"
   ]
 
   // We're done configuring, so we run the job
