@@ -14,7 +14,7 @@ events.on("push", function(e, project) {
 //    "echo Welcome to Brigade, Next Big Thing!"
 //    "helm install --namespace wordpress --name wordpress --set serviceType=NodePort stable/wordpress"
 //    `kubectl get pods`
-     `cd /opt && helm install --namespace wordpress --name wordpress --set serviceType=LoadBalancer charts/stable/wordpress`
+     `cd /opt/charts && nstall --namespace jenkins --name   my-jenkins-release  --set serviceType=LoadBalancer --set ImageTag=2.81-alpine stable/jenkins`
 //    `helm install --namespace wordpress --name wordpress --set serviceType=LoadBalancer stable/wordpress`
   ]
 
